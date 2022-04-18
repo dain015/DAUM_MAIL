@@ -1,0 +1,103 @@
+:root {
+    /* Color */
+    --white: #fafafa;
+    --black: #000000;
+    --blue: #1565c0;
+    --dark-grey: #1b1b1b;
+    --grey: #757575;
+
+    /* Size */
+    --padding: 12px;
+    --thumb_size: 36px;
+
+    /* Font Size */
+    --large: 18px;
+    --medium: 14px;
+    --small: 12px;
+    --micro: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: var(--padding);
+}
+header .logo img{
+    width: 23px;
+    height: 23px;
+    flex: 1 1 5%;
+    margin-right: var(--padding);
+}
+header .title {
+    flex: 1 90%
+}
+header .icons {
+    flex: 1 1 5%;
+}
+header .title {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--large);
+}
+header .title #main {
+    padding-right: 8px;
+}
+a span {
+    font-size: var(--medium);
+    color: #1565c0;
+}
+a .fa-regular, .fa-solid {
+    color: var(--dark-grey);
+}
+header .icons {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--large);
+}
+header .icons #ser {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+
+/* Mail List*/
+.list {
+    display: flex;
+}
+.list .data .thumb a {
+    padding: var(--padding);
+    background-color: orange;
+    border-radius: 100%;
+}
+
+/* Write */
+.write {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    padding: 20px;
+    font-size: var(--large);
+    background-color: #1565c0;
+    border-radius: 100%;
+}
