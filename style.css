@@ -14,7 +14,7 @@
     --large: 18px;
     --medium: 14px;
     --small: 12px;
-    --micro: 10px;
+    --micro: 11px;
 }
 
 * {
@@ -81,16 +81,45 @@ header .icons #ser {
 /* Mail List*/
 .list {
     display: flex;
+    flex-direction: row;
 }
-.list .data .thumb a {
+.list .thumb {
+    flex: 1 1 1%;
+}
+.list .data {
+    flex: 1 1 94%;
+}
+.list .datestar {
+    flex: 1 1 5%;
+    text-align: right;
+    padding-right: var(--padding);
+}
+.list .thumb {
+    margin: 7px;
     padding: var(--padding);
     background-color: orange;
     border-radius: 100%;
+    font-size: var(--large);
 }
-.list .data .info .name,.content {
-    flex-direction: column;
+.list .data .name {
+    font-size: var(--medium);
+    padding-top: var(--padding);
 }
-
+.list .data .content {
+    font-size: var(--small);
+    padding-top: 3px;
+}
+.list .datestar .date {
+    font-size: var(--micro);
+    padding-top: var(--padding);
+}
+.list .datestar button {
+    border: 0;
+    outline: 0;
+    padding-top: 6px;
+    color: var(--grey);
+    background-color: white;
+}
 
 /* Write */
 .write {
