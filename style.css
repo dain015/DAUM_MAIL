@@ -67,9 +67,6 @@ a span {
     font-size: var(--medium);
     color: #1565c0;
 }
-a .fa-regular, .fa-solid {
-    color: var(--dark-grey);
-}
 header .icons {
     display: flex;
     flex-direction: row;
@@ -90,6 +87,10 @@ header .icons #ser {
     background-color: orange;
     border-radius: 100%;
 }
+.list .data .info .name,.content {
+    flex-direction: column;
+}
+
 
 /* Write */
 .write {
@@ -98,6 +99,7 @@ header .icons #ser {
     bottom: 32px;
     padding: 20px;
     font-size: var(--large);
+    color: var(--white);
     background-color: #1565c0;
     border-radius: 100%;
 }
