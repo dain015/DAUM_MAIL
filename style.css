@@ -3,7 +3,7 @@
     --white: #fafafa;
     --black: #000000;
     --blue: #1565c0;
-    --dark-grey: #1b1b1b;
+    --dark-grey: #424242;
     --grey: #757575;
 
     /* Size */
@@ -11,10 +11,10 @@
     --thumb_size: 36px;
 
     /* Font Size */
-    --large: 18px;
-    --medium: 14px;
-    --small: 12px;
-    --micro: 11px;
+    --large: 20px;
+    --medium: 16px;
+    --small: 14px;
+    --micro: 12px;
 }
 
 * {
@@ -25,7 +25,6 @@
 body {
     font-family: Roboto;
 }
-
 
 ul {
     list-style: none;
@@ -62,15 +61,18 @@ header .title {
 }
 header .title #main {
     padding-right: 8px;
+    font-weight: bold;
 }
 a span {
-    font-size: var(--medium);
     color: #1565c0;
 }
 header .icons {
     display: flex;
     flex-direction: row;
     font-size: var(--large);
+}
+header .icons li a i {
+    color: var(--dark-grey);
 }
 header .icons #ser {
     padding-left: var(--padding);
@@ -100,10 +102,13 @@ header .icons #ser {
     background-color: orange;
     border-radius: 100%;
     font-size: var(--large);
+    color: var(--white) ;
 }
 .list .data .name {
     font-size: var(--medium);
+    font-weight: bold;
     padding-top: var(--padding);
+
 }
 .list .data .content {
     font-size: var(--small);
@@ -112,11 +117,12 @@ header .icons #ser {
 .list .datestar .date {
     font-size: var(--micro);
     padding-top: var(--padding);
+    color: var(--grey);
 }
 .list .datestar button {
     border: 0;
     outline: 0;
-    padding-top: 6px;
+    padding-top: 8px;
     color: var(--grey);
     background-color: white;
 }
